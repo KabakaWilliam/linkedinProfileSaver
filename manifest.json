@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "SavedIn",
+    "description": "Save and categorize linkedin profiles you want to revisit",
+    "version": "1.0",
+    "icons": {
+
+        "48": "/images/pix48.png",
+        "128": "/images/pix128.png"
+    },
+    "page_action": {
+        "default_icon": {
+          
+            "48": "/images/pix48.png",
+            "128": "/images/pix128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.linkedin.com/in/*"],
+        "js": ["js/content.js"]
+
+        
+    }]
+}
